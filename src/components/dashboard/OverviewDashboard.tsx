@@ -286,7 +286,7 @@ export const OverviewDashboard: React.FC<OverviewDashboardProps> = ({
           </div>
         </div>
 
-        {/* Card 2: Money Flows */}
+        {/* Card 2: Transactions */}
         <div
           onClick={() => onNavigate('transactions')}
           className="group p-4 rounded-xl glass-panel glass-panel-hover cursor-pointer border border-slate-200 dark:border-[#2f2a23] space-y-2 transition shadow-xs"
@@ -299,7 +299,7 @@ export const OverviewDashboard: React.FC<OverviewDashboardProps> = ({
           </div>
           <div>
             <h3 className="text-sm font-semibold text-slate-900 dark:text-[#f4ede1]">
-              Money Flows
+              Transactions
             </h3>
             <p className="text-xs text-slate-500 dark:text-[#8f8270] mt-0.5">
               Trace transfers and multi-hop account routes.
@@ -334,7 +334,7 @@ export const OverviewDashboard: React.FC<OverviewDashboardProps> = ({
           </div>
         </div>
 
-        {/* Card 4: Active Cases */}
+        {/* Card 4: Cases */}
         <div
           onClick={() => onNavigate('cases')}
           className="group p-4 rounded-xl glass-panel glass-panel-hover cursor-pointer border border-slate-200 dark:border-[#2f2a23] space-y-2 transition shadow-xs"
@@ -347,7 +347,7 @@ export const OverviewDashboard: React.FC<OverviewDashboardProps> = ({
           </div>
           <div>
             <h3 className="text-sm font-semibold text-slate-900 dark:text-[#f4ede1]">
-              Cases &amp; Tasks
+              Cases
             </h3>
             <p className="text-xs text-slate-500 dark:text-[#8f8270] mt-0.5">
               Manage evidence, taskforces, and warrants.

@@ -164,11 +164,11 @@ export const AIAnalysisModule: React.FC<AIAnalysisModuleProps> = ({
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-5">
         <div>
           <div className="flex items-center gap-2 font-mono text-xs text-purple-600 dark:text-[#dfd5bf] uppercase tracking-wider font-semibold">
-            <BrainCircuit className="w-4 h-4 text-purple-500 dark:text-[#dfd5bf]" /> AI Network Intelligence
+            <BrainCircuit className="w-4 h-4 text-purple-500 dark:text-[#dfd5bf]" /> AI Insights
           </div>
-          <h2 className="text-2xl font-bold text-slate-900 dark:text-[#f4ede1] mt-1">AI Network Intelligence Engine</h2>
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-[#f4ede1] mt-1">AI Insights</h2>
           <p className="text-xs text-slate-600 dark:text-[#b8ad99] mt-1">
-            Discover key middlemen, high-volume communication hubs, and unusual financial flows across the network.
+            Discover key middlemen, communication hubs, and unusual financial flows across the network.
           </p>
         </div>
 

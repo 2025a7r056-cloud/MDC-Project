@@ -181,13 +181,13 @@ export const AlertsFindings: React.FC<AlertsFindingsProps> = ({
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-5">
         <div>
           <div className="flex items-center gap-2 font-mono text-xs text-amber-600 dark:text-[#dfd5bf] uppercase tracking-wider font-semibold">
-            <AlertOctagon className="w-4 h-4 text-amber-500 dark:text-[#d4af37]" /> Automated Pattern Alerts
+            <AlertOctagon className="w-4 h-4 text-amber-500 dark:text-[#d4af37]" /> Alerts
           </div>
           <h2 className="text-2xl font-bold text-slate-900 dark:text-[#f4ede1] mt-1">
-            Intelligence Alerts &amp; Findings
+            Alerts ({filteredAlerts.length})
           </h2>
           <p className="text-xs text-slate-600 dark:text-[#b8ad99] mt-1">
-            Suspicious activity flags detected across financial transfers, communication bursts, and network links.
+            Flagged patterns across transactions, communications, and network links.
           </p>
         </div>
 

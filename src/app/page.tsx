@@ -37,21 +37,9 @@ export default function CrimeGraphAIApp() {
   const [isDemoActive, setIsDemoActive] = useState<boolean>(false);
   const [isPresentationMode, setIsPresentationMode] = useState<boolean>(false);
 
-  // Help Center & Onboarding Tutorial State
+  // Help Center & Onboarding Tutorial State (User can open via Help button in navbar)
   const [isHelpOpen, setIsHelpOpen] = useState<boolean>(false);
   const [isTutorialOpen, setIsTutorialOpen] = useState<boolean>(false);
-
-  // Auto-launch tutorial for first-time visitors
-  useEffect(() => {
-    try {
-      const completed = localStorage.getItem('crimegraph_tutorial_completed');
-      if (!completed) {
-        setIsTutorialOpen(true);
-      }
-    } catch (e) {
-      // Ignore if localStorage unavailable
-    }
-  }, []);
 
   // Active Selections
   const [selectedEntityId, setSelectedEntityId] = useState<string | null>(null);

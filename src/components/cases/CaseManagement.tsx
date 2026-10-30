@@ -261,24 +261,17 @@ export const CaseManagement: React.FC<CaseManagementProps> = ({
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-5">
         <div>
           <div className="flex items-center gap-2 font-mono text-xs text-blue-600 dark:text-[#dfd5bf] uppercase tracking-wider font-semibold">
-            <Briefcase className="w-4 h-4 text-blue-500 dark:text-[#dfd5bf]" /> Case Management &amp; Evidence Repository
+            <Briefcase className="w-4 h-4 text-blue-500 dark:text-[#dfd5bf]" /> Cases
           </div>
           <h2 className="text-2xl font-bold text-slate-900 dark:text-[#f4ede1] mt-1">
-            Taskforce Investigations ({cases.length})
+            Cases ({cases.length})
           </h2>
           <p className="text-xs text-slate-600 dark:text-[#b8ad99] mt-1">
-            Coordinate multi-agency investigations, attach suspect entities, maintain evidence timelines, and track indictment readiness.
+            Manage active investigation files, evidence, and operational tasks.
           </p>
         </div>
 
         <div className="flex flex-wrap items-center gap-2.5">
-          {/* In-Memory Storage Badge */}
-          <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-sky-50 dark:bg-[#191612] border border-sky-200 dark:border-[#383127] text-[11px] font-mono text-sky-800 dark:text-[#dfd5bf]">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            <span className="font-bold">STORAGE: IN-MEMORY DEMO MODE</span>
-            <span className="text-slate-500 dark:text-[#8f8270] hidden xl:inline">— Persistent in active session</span>
-          </div>
-
           <button
             onClick={() => {
               setFormErrors({});
@@ -286,7 +279,7 @@ export const CaseManagement: React.FC<CaseManagementProps> = ({
             }}
             className="px-4 py-2 rounded-lg bg-sky-600 hover:bg-sky-500 dark:bg-[#dfd5bf] text-white dark:text-[#080706] hover:dark:bg-[#e8dec8] font-semibold text-xs transition flex items-center gap-1.5 shadow-xs"
           >
-            <Plus className="w-4 h-4" /> Open New Case File
+            <Plus className="w-4 h-4" /> New Case
           </button>
         </div>
       </div>

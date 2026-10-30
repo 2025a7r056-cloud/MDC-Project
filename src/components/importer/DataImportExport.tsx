@@ -266,20 +266,20 @@ export const DataImportExport: React.FC<DataImportExportProps> = ({
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 dark:border-slate-800 pb-5">
         <div>
           <div className="flex items-center gap-2 font-mono text-xs text-amber-600 dark:text-[#dfd5bf] uppercase tracking-wider font-semibold">
-            <Database className="w-4 h-4 text-amber-500 dark:text-[#d4af37]" /> Data Ingestion Pipeline
+            <Database className="w-4 h-4 text-amber-500 dark:text-[#d4af37]" /> Import &amp; Export
           </div>
           <h2 className="text-2xl font-bold text-slate-900 dark:text-[#f4ede1] mt-1">
-            Guided Intelligence Import Wizard
+            Import / Export
           </h2>
           <p className="text-xs text-slate-600 dark:text-[#b8ad99] mt-1">
-            Easily import external case spreadsheets, wire logs, or graph datasets with automated column mapping and duplicate verification.
+            Import external spreadsheets or JSON datasets, or export current intelligence records.
           </p>
         </div>
 
         {/* Security Notice */}
         <div className="bg-slate-50 dark:bg-[#110f0d] p-2.5 rounded-lg border border-slate-200 dark:border-[#2f2a23] text-xs font-mono text-slate-600 dark:text-[#b8ad99] flex items-center gap-2 shadow-xs">
           <ShieldCheck className="w-4 h-4 text-emerald-500 dark:text-[#7a9a83]" />
-          <span>Client-Side Sandbox: Data is verified locally before workspace integration.</span>
+          <span>Local processing: Data is verified in your browser session.</span>
         </div>
       </div>
 

@@ -77,13 +77,13 @@ export const GuidedDemoController: React.FC<GuidedDemoControllerProps> = ({
   onTogglePresentationMode,
 }) => {
   const [currentStepIndex, setCurrentStepIndex] = useState<number>(0);
-  const [showScript, setShowScript] = useState<boolean>(true);
+  const [showScript, setShowScript] = useState<boolean>(false);
   const [showPresenterNotes, setShowPresenterNotes] = useState<boolean>(false);
   const [isEditingScript, setIsEditingScript] = useState<boolean>(false);
   const [customScripts, setCustomScripts] = useState<Record<number, string>>({});
   const [isFullscreen, setIsFullscreen] = useState<boolean>(false);
   const [showVivaModal, setShowVivaModal] = useState<boolean>(false);
-  const [isMinimized, setIsMinimized] = useState<boolean>(false);
+  const [isMinimized, setIsMinimized] = useState<boolean>(true);
 
   // Toggle fullscreen
   const toggleFullscreen = () => {

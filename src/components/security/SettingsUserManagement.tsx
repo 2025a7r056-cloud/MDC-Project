@@ -94,19 +94,19 @@ export const SettingsUserManagement: React.FC<SettingsUserManagementProps> = ({
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 dark:border-[#231f1a] pb-5">
         <div>
           <div className="flex items-center gap-2 font-mono text-xs text-amber-800 dark:text-[#dfd5bf] uppercase tracking-wider font-semibold">
-            <Settings className="w-4 h-4 text-amber-700 dark:text-[#dfd5bf]" /> Access Governance &amp; Configuration
+            <Settings className="w-4 h-4 text-amber-700 dark:text-[#dfd5bf]" /> System
           </div>
           <h2 className="text-2xl font-bold text-slate-900 dark:text-[#f4ede1] mt-1">
-            System Settings &amp; Role-Based Access Control (RBAC)
+            Settings
           </h2>
           <p className="text-xs text-slate-500 dark:text-[#8f8270] mt-1">
-            Configure system endpoints, review authorized personnel clearances, and manage cryptographic API keys.
+            Configure system preferences, API connections, and user roles.
           </p>
         </div>
 
         {/* Current Active Role Pill */}
         <div className="flex items-center gap-2 p-2 rounded-lg bg-slate-50 dark:bg-[#100f0d] border border-slate-200 dark:border-[#231f1a] text-xs font-mono">
-          <span className="text-slate-500 dark:text-[#8f8270]">Current Session Role:</span>
+          <span className="text-slate-500 dark:text-[#8f8270]">Active Role:</span>
           <span className="text-amber-900 dark:text-[#dfd5bf] font-medium px-2 py-0.5 rounded bg-amber-50 dark:bg-[#1f1b16] border border-amber-200 dark:border-[#383127]">
             {currentRole}
           </span>
@@ -200,9 +200,9 @@ export const SettingsUserManagement: React.FC<SettingsUserManagementProps> = ({
           <div className="p-5 rounded-xl glass-panel space-y-3 border border-slate-200 dark:border-[#231f1a]">
             <div className="flex items-center justify-between">
               <h3 className="text-sm font-semibold text-slate-900 dark:text-[#f4ede1] flex items-center gap-2">
-                <Users className="w-4 h-4 text-amber-700 dark:text-[#dfd5bf]" /> Authorized Taskforce Personnel
+                <Users className="w-4 h-4 text-amber-700 dark:text-[#dfd5bf]" /> User Accounts
               </h3>
-              <span className="text-[11px] font-mono text-slate-500 dark:text-[#8f8270]">4 Active Operatives</span>
+              <span className="text-[11px] font-mono text-slate-500 dark:text-[#8f8270]">4 Users</span>
             </div>
 
             <div className="overflow-x-auto">
@@ -245,10 +245,10 @@ export const SettingsUserManagement: React.FC<SettingsUserManagementProps> = ({
             </div>
           </div>
 
-          {/* RBAC Permissions Matrix */}
+          {/* Permissions Matrix */}
           <div className="p-5 rounded-xl glass-panel space-y-3 border border-slate-200 dark:border-[#231f1a]">
             <h3 className="text-sm font-semibold text-slate-900 dark:text-[#f4ede1] flex items-center gap-2">
-              <ShieldCheck className="w-4 h-4 text-emerald-500 dark:text-emerald-400" /> Role-Based Access Control Matrix
+              <ShieldCheck className="w-4 h-4 text-emerald-500 dark:text-emerald-400" /> Permissions Matrix
             </h3>
 
             <div className="overflow-x-auto">

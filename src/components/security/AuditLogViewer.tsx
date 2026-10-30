@@ -44,18 +44,18 @@ export const AuditLogViewer: React.FC<AuditLogViewerProps> = ({ logs }) => {
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-200 dark:border-[#231f1a] pb-5">
         <div>
           <div className="flex items-center gap-2 font-mono text-xs text-amber-800 dark:text-[#dfd5bf] uppercase tracking-wider font-semibold">
-            <Lock className="w-4 h-4 text-amber-700 dark:text-[#dfd5bf]" /> Cryptographic Integrity &amp; Chain of Custody
+            <FileText className="w-4 h-4 text-amber-700 dark:text-[#dfd5bf]" /> Activity Log
           </div>
-          <h2 className="text-2xl font-bold text-slate-900 dark:text-[#f4ede1] mt-1">Forensic Audit Log Trail</h2>
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-[#f4ede1] mt-1">Audit Logs</h2>
           <p className="text-xs text-slate-600 dark:text-[#8f8270] mt-1">
-            Immutable non-repudiation event ledger logging queries, dossier accesses, status alterations, and evidence modifications.
+            Track system activity, user actions, and investigation history.
           </p>
         </div>
 
         {/* Audit Status Badge */}
         <div className="bg-slate-50 dark:bg-[#100f0d] p-2.5 rounded-lg border border-slate-200 dark:border-[#231f1a] text-xs font-mono text-slate-700 dark:text-[#dfd5bf] flex items-center gap-2 shadow-xs">
           <ShieldCheck className="w-4 h-4 text-emerald-500 dark:text-emerald-400" />
-          <span>Hashing Engine: SHA-256 Merkle Provenance Active</span>
+          <span>Logs Verified</span>
         </div>
       </div>
 
@@ -114,12 +114,12 @@ export const AuditLogViewer: React.FC<AuditLogViewerProps> = ({ logs }) => {
             <thead>
               <tr className="border-b border-slate-200 dark:border-[#231f1a] bg-slate-50 dark:bg-[#100f0d] text-[11px] uppercase text-slate-500 dark:text-[#8f8270] tracking-wider">
                 <th className="py-3 px-4">Event ID</th>
-                <th className="py-3 px-4">Timestamp (UTC)</th>
-                <th className="py-3 px-4">Authorized User &amp; Role</th>
+                <th className="py-3 px-4">Timestamp</th>
+                <th className="py-3 px-4">User &amp; Role</th>
                 <th className="py-3 px-4">Action</th>
-                <th className="py-3 px-4">Target Ref</th>
-                <th className="py-3 px-4">Event Narrative</th>
-                <th className="py-3 px-4 text-right">Integrity Hash</th>
+                <th className="py-3 px-4">Target</th>
+                <th className="py-3 px-4">Description</th>
+                <th className="py-3 px-4 text-right">Hash</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-200 dark:divide-[#231f1a]">
