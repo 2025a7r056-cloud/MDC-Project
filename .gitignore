@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+.pytest_cache/
+
+# Next.js build output
+.next/
+out/
+build/
+dist/
+
+# Vercel
+.vercel
+
+# Python virtual environment and bytecode
+backend/.venv/
+.venv/
+env/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.sqlite3
+
+# Environment files
+.env*.local
+.env
+
+# Debug / logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
